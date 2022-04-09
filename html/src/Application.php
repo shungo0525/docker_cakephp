@@ -63,7 +63,9 @@ class Application extends BaseApplication
             $this->addPlugin('DebugKit');
         }
 
-        // Load more plugins here
+        // 下記を実行すると追加される
+        // $ bin/cake plugin load Migrations
+        $this->addPlugin('Migrations');
     }
 
     /**
