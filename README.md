@@ -1,7 +1,13 @@
+## コマンド
+
+- `docker-compose exec app bash`
+- `docker-compose exec db bash`
+- `mysql -u db_user -ppassword`
+
 ## MEMO
 - ref: https://www.kamome-susume.com/docker-cakephp4/
   - phpMyAdminは省略
-
+  
 # CakePHP Application Skeleton
 
 ![Build Status](https://github.com/cakephp/app/actions/workflows/ci.yml/badge.svg?branch=master)
