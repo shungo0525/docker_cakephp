@@ -36,17 +36,12 @@ return [
      */
     'Datasources' => [
         'default' => [
-            'className' => 'Cake\Database\Connection',
-            'driver' => 'Cake\Database\Driver\Mysql',
-            'persistent' => false,
-            // docker-composeのサービス名と一致させる
-            'host' => 'db',
-            'username' => 'db_user',
-            'password' => 'password',
-            'database' => 'cakephp4_tests',
-            'encoding' => 'utf8mb4',
-            'timezone' => 'UTC',
-            'cacheMetadata' => true,
+           // docker-composeのサービス名と一致させる
+           'host' => 'db',
+           'username' => 'db_user',
+           'password' => 'password',
+           'database' => 'cakephp4_tests',
+           'url' => env('DATABASE_URL', null),
         ],
 
         /*
