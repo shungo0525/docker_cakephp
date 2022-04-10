@@ -7,6 +7,9 @@ ARG composer_hash=5ca7445cfd48dd27c5a84aa005a47b4d9fd91132313830609875df3a697370
 # Composer の保存先
 ARG composer_path=/usr/local/bin/composer
 
+COPY php.ini /usr/local/etc/php/
+COPY site.conf /etc/apache2/sites-available/000-default.conf
+
 RUN apt-get update \
   # Composer インストール
   && php -r "copy('https://getcomposer.org/download/$composer_ver/composer.phar', '$composer_path');" \
