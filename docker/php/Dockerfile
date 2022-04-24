@@ -1,4 +1,4 @@
-FROM php:8.1-apache
+FROM php:7.4-apache
 
 # Composer のバージョン と ハッシュ値
 ARG composer_ver=1.10.13
